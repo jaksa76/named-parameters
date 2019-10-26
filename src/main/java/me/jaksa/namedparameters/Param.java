@@ -3,7 +3,7 @@ package me.jaksa.namedparameters;
 /**
  * An object wrapping the named parameter. This class can be used as it is
  * or it can be extended to make the uses type safe.
- *
+ * <br>
  * The standard way to use it:
  * <pre>
  * public static class PunchParams {
@@ -18,12 +18,12 @@ package me.jaksa.namedparameters;
  *   int speed = getParam(params, SPEED, 3);
  *   String exclamation = getParam(params, EXCLAMATION, "@#$%!");
  *
- *   System.out.printf("Robot, punching with force %d and speed %d, says: %s\n", force, speed, exclamation);
+ *   ...
  * }
- *
  * </pre>
  *
  * The extra safe way to use it:
+ *
  * <pre>
  *  public static class KickParam<T> extends Param<T> {
  *    private KickParam(Names k, T v) { super(k, v); }
@@ -40,7 +40,6 @@ package me.jaksa.namedparameters;
  *
  *      ...
  *  }
- *
  * </pre>
  *
  * @see Params
