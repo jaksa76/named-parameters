@@ -25,15 +25,15 @@ package me.jaksa.namedparameters;
  * The extra safe way to use it:
  *
  * <pre>
- *  public static class KickParam<T> extends Param<T> {
+ *  public static class KickParam&lt;T&gt; extends Param&lt;T&gt; {
  *    private KickParam(Names k, T v) { super(k, v); }
  *    enum Names {HEIGHT, FORCE, IS_ROUND}
- *    public static KickParam<Integer> height(int h) { return new KickParam<Integer>(Names.HEIGHT, h); }
- *    public static KickParam<Integer> force(int f) { return new KickParam<Integer>(Names.FORCE, f); }
- *    public static KickParam<Boolean> roundKick = new KickParam<Boolean>(Names.IS_ROUND, true);
+ *    public static KickParam&lt;Integer&gt; height(int h) { return new KickParam&lt;Integer&gt;(Names.HEIGHT, h); }
+ *    public static KickParam&lt;Integer&gt; force(int f) { return new KickParam&lt;Integer&gt;(Names.FORCE, f); }
+ *    public static KickParam&lt;Boolean&gt; roundKick = new KickParam&lt;Boolean&gt;(Names.IS_ROUND, true);
  *  }
  *
- *  public void kick(KickParam<Integer> heightParam, KickParam... extraParams) {
+ *  public void kick(KickParam&lt;Integer&gt; heightParam, KickParam... extraParams) {
  *      int height = heightParam.value;
  *      int force = getParam(extraParams, KickParam.Names.FORCE, 5);
  *      boolean isRoundKick = getParam(extraParams, KickParam.Names.IS_ROUND, false);
@@ -41,6 +41,8 @@ package me.jaksa.namedparameters;
  *      ...
  *  }
  * </pre>
+ *
+ * @param V the type of value
  *
  * @see Params
  */
