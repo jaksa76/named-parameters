@@ -24,11 +24,11 @@ public class GiantRobot {
     public static class KickParam<T> extends Param<T> {
         private KickParam(Names k, T v) { super(k, v); }
         enum Names {HEIGHT, FORCE, IS_ROUND}
-        public static KickParam<Integer> height(int h) { return new KickParam<Integer>(Names.HEIGHT, h); }
-        public static KickParam<Integer> force(int f) { return new KickParam<Integer>(Names.FORCE, f); }
-        public static KickParam<Boolean> isRoundKick(boolean r) { return new KickParam<Boolean>(Names.IS_ROUND, r); }
-        public static KickParam<Boolean> isRoundKick() { return new KickParam<Boolean>(Names.IS_ROUND, true); }
-        public static KickParam<Boolean> isRoundKick = new KickParam<Boolean>(Names.IS_ROUND, true);
+        public static KickParam<Integer> height(int h) { return new KickParam<>(Names.HEIGHT, h); }
+        public static KickParam<Integer> force(int f) { return new KickParam<>(Names.FORCE, f); }
+        public static KickParam<Boolean> isRoundKick(boolean r) { return new KickParam<>(Names.IS_ROUND, r); }
+        public static KickParam<Boolean> isRoundKick() { return new KickParam<>(Names.IS_ROUND, true); }
+        public static KickParam<Boolean> isRoundKick = new KickParam<>(Names.IS_ROUND, true);
     }
     public void kick(KickParam<Integer> heightParam, KickParam... extraParams) {
         int height = heightParam.value;

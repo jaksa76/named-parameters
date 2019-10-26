@@ -28,9 +28,9 @@ package me.jaksa.namedparameters;
  *  public static class KickParam&lt;T&gt; extends Param&lt;T&gt; {
  *    private KickParam(Names k, T v) { super(k, v); }
  *    enum Names {HEIGHT, FORCE, IS_ROUND}
- *    public static KickParam&lt;Integer&gt; height(int h) { return new KickParam&lt;Integer&gt;(Names.HEIGHT, h); }
- *    public static KickParam&lt;Integer&gt; force(int f) { return new KickParam&lt;Integer&gt;(Names.FORCE, f); }
- *    public static KickParam&lt;Boolean&gt; roundKick = new KickParam&lt;Boolean&gt;(Names.IS_ROUND, true);
+ *    public static KickParam&lt;Integer&gt; height(int h) { return new KickParam&lt;&gt;(Names.HEIGHT, h); }
+ *    public static KickParam&lt;Integer&gt; force(int f) { return new KickParam&lt;&gt;(Names.FORCE, f); }
+ *    public static KickParam&lt;Boolean&gt; roundKick = new KickParam&lt;&gt;(Names.IS_ROUND, true);
  *  }
  *
  *  public void kick(KickParam&lt;Integer&gt; heightParam, KickParam... extraParams) {
