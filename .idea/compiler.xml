@@ -7,10 +7,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="named-arguments" />
+        <module name="named-parameters" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="named-arguments" target="1.5" />
+      <module name="named-parameters" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>

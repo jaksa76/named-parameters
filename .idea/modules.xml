@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/named-arguments.iml" filepath="$PROJECT_DIR$/named-arguments.iml" />
+      <module fileurl="file://$PROJECT_DIR$/named-parameters.iml" filepath="$PROJECT_DIR$/named-parameters.iml" />
     </modules>
   </component>
 </project>

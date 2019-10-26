@@ -1,21 +1,21 @@
-package me.jaksa.namedarguments;
+package me.jaksa.namedparameters;
 
 
-import me.jaksa.namedarguments.GiantRobot.KickParam;
+import me.jaksa.namedparameters.GiantRobot.KickParam;
 import org.junit.Test;
 
-import static me.jaksa.namedarguments.GiantRobot.KickParam.isRoundKick;
-import static me.jaksa.namedarguments.GiantRobot.KickParam.height;
-import static me.jaksa.namedarguments.GiantRobot.PunchParams.*;
+import static me.jaksa.namedparameters.GiantRobot.KickParam.isRoundKick;
+import static me.jaksa.namedparameters.GiantRobot.KickParam.height;
+import static me.jaksa.namedparameters.GiantRobot.PunchParams.*;
 
 /**
  * Created by Jaksa on 26/10/2019.
  */
-public class ArgTest {
+public class ParamTest {
     GiantRobot robot = new GiantRobot();
 
     @Test
-    public void testInvokingWithNamedArguments() {
+    public void testInvokingWithNamedParameters() {
         robot.punch();
         robot.punch(force(5));
         robot.punch(speed(30));
@@ -41,7 +41,7 @@ public class ArgTest {
 
         // all these are equivalent
         robot.kick(height(12), isRoundKick(true));
-        robot.kick(height(12), isRoundKick()); // arg constructor with default value
+        robot.kick(height(12), isRoundKick()); // param constructor with default value
         robot.kick(height(12), isRoundKick);   // this is really a constant
 
         // will not compile because here we've statically imported the force from punch

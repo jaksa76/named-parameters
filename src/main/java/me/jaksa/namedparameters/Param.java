@@ -1,13 +1,13 @@
-package me.jaksa.namedarguments;
+package me.jaksa.namedparameters;
 
 /**
  * Created by Jaksa on 26/10/2019.
  */
-public class Arg<V> {
+public class Param<V> {
     public final Object key;
     public final V value;
 
-    public Arg(Object key, V value) {
+    public Param(Object key, V value) {
         this.key = key;
         this.value = value;
     }
