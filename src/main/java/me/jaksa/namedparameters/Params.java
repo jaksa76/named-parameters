@@ -10,10 +10,11 @@ package me.jaksa.namedparameters;
 public class Params {
     /**
      * Create a named parameter
-     * @param name the name of the parameter (can be an enum)
+     *
+     * @param name  the name of the parameter (can be an enum)
      * @param value the value of the parameter
-     * @param <V>
-     * @return
+     * @param <V>   the type of the value
+     * @return a new named parameter
      */
     public static <V> Param<V> param(Object name, V value) {
         return new Param(name, value);
@@ -23,8 +24,9 @@ public class Params {
      * Retrieve a named parameter.
      *
      * @param params the array containing the parameters
-     * @param name the name of the parameter to retrieve
-     * @param def a default value which will be retruned if the parameter is not in the array
+     * @param name   the name of the parameter to retrieve
+     * @param def    a default value which will be retruned if the parameter is not in the array
+     * @param <V>    the type of the value of the param
      * @return the parameter value specified in params or the default value
      */
     public static <V> V getParam(Param[] params, Object name, V def) {

@@ -3,7 +3,7 @@ package me.jaksa.namedparameters;
 /**
  * An object wrapping the named parameter. This class can be used as it is
  * or it can be extended to make the uses type safe.
- * <br>
+ * <p>
  * The standard way to use it:
  * <pre>
  * public static class PunchParams {
@@ -21,9 +21,8 @@ package me.jaksa.namedparameters;
  *   ...
  * }
  * </pre>
- *
+ * <p>
  * The extra safe way to use it:
- *
  * <pre>
  *  public static class KickParam&lt;T&gt; extends Param&lt;T&gt; {
  *    private KickParam(Names k, T v) { super(k, v); }
@@ -42,19 +41,22 @@ package me.jaksa.namedparameters;
  *  }
  * </pre>
  *
- * @param V the type of value
- *
+ * @param <V> the type of value
  * @see Params
  */
 public class Param<V> {
-    /** The name of the parameter. Could be a string or an enum. */
+    /**
+     * The name of the parameter. Could be a string or an enum.
+     */
     public final Object name;
 
-    /** the value of the parameter */
+    /**
+     * the value of the parameter
+     */
     public final V value;
 
     /**
-     * @param name the name of the parameter (can be an enum)
+     * @param name  the name of the parameter (can be an enum)
      * @param value the actual value
      */
     public Param(Object name, V value) {
