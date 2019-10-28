@@ -4,13 +4,13 @@
 
     <groupId>me.jaksa</groupId>
     <artifactId>named-parameters</artifactId>
-    <version>0.2-SNAPSHOT</version>
+    <version>0.1</version>
 
     <scm>
         <connection>scm:git:git://github.com/dexecutor/dependent-tasks-executor.git</connection>
         <developerConnection>scm:git:git@github.com:dexecutor/dexecutor.git</developerConnection>
         <url>https://github.com/dexecutor/dependent-tasks-executor</url>
-        <tag>HEAD</tag>
+        <tag>named-parameters-0.1</tag>
     </scm>
 
     <distributionManagement>
