@@ -12,7 +12,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="named-arguments" target="1.5" />
-      <module name="named-parameters" target="1.5" />
+      <module name="named-parameters" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
