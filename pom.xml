@@ -6,6 +6,24 @@
     <artifactId>named-parameters</artifactId>
     <version>0.2-SNAPSHOT</version>
 
+    <name>Named Parameters for Java</name>
+    <description>Microlibrary to support named parameters in Java.</description>
+    <url>http://github.com/jaksa76/named-parameters</url>
+
+    <licenses>
+        <license>
+            <name>The Apache Software License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <name>Jaksa Vuckovic</name>
+            <email>jaksa76@gmail.com</email>
+        </developer>
+    </developers>
+
     <scm>
         <connection>scm:git:git://github.com/dexecutor/dependent-tasks-executor.git</connection>
         <developerConnection>scm:git:git@github.com:dexecutor/dexecutor.git</developerConnection>
