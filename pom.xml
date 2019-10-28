@@ -6,7 +6,7 @@
     <artifactId>named-parameters</artifactId>
     <version>0.2-SNAPSHOT</version>
 
-    <name>Named Parameters for Java</name>
+    <name>Named Parameters</name>
     <description>Microlibrary to support named parameters in Java.</description>
     <url>http://github.com/jaksa76/named-parameters</url>
 
